@@ -20,6 +20,8 @@ function addjs() {
 
     wp_register_script('main', get_template_directory_uri() . '/assets/js/main.js', array(), 1, 1, 1);
     wp_enqueue_script('main');
+    wp_register_script('stars', get_template_directory_uri() . '/assets/js/stars.js', array(), 1, 1, 1);
+    wp_enqueue_script('stars');
 
 }
 
