@@ -1,3 +1,12 @@
+// Preloader
+window.addEventListener('load', () => {
+    const preloader = document.querySelector(".preloader")
+    setTimeout(function () {
+        preloader.classList.add("fadeOut")
+    }, 2000);
+});
+
+
 const header = document.querySelector("header")
 
 const burger = document.querySelector('.burger')
@@ -28,17 +37,6 @@ window.addEventListener("scroll", function () {
     }
     prevScrollpos = currentScrollPos;
 })
-
-// window.addEventListener("scroll", function () {
-//     if(window.pageYOffset > 50) {
-//         header.style.top = "-50px";
-//         header.style.backgroundColor = "lightgray";
-//     }
-//     else {
-//         header.style.top = "0";
-//         header.style.backgroundColor = "transparent";
-//     }
-// })
 
 
 
@@ -119,7 +117,7 @@ function scroller2(hClass1, hClass2, hClass3) {
 
     hPay.addEventListener('mouseover', function () {
         scroller12.style.marginTop = "0px";
-        scroller12.style.height = slide1Height;
+        scroller12.style.height = "258px";
 
         makeInvoicesImg.classList.add('make-invoices-send-image')
 
@@ -137,7 +135,7 @@ function scroller2(hClass1, hClass2, hClass3) {
     })
     hExchange.addEventListener('mouseover', function () {
         scroller12.style.marginTop = "242px";
-        scroller12.style.height = slide3Height;
+        scroller12.style.height = "218px";
 
         makeInvoicesImg.classList.add('make-invoices-accounting-image')
 
@@ -155,9 +153,13 @@ function scroller3(hClass1, hClass2, hClass3) {
     let hFollow = document.querySelector(hClass2)
     let hExchange = document.querySelector(hClass3)
 
+    slide1Height = hPay.offsetHeight + "px";
+    slide2Height = hFollow.offsetHeight + "px";
+    slide3Height = hExchange.offsetHeight + "px";
+
     hPay.addEventListener('mouseover', function () {
         scroller13.style.marginTop = "0px";
-        scroller13.style.height = "178px";
+        scroller13.style.height = slide1Height;
 
         payEmployeesImg.classList.add('pay-employees-salaries-image')
 
@@ -166,7 +168,7 @@ function scroller3(hClass1, hClass2, hClass3) {
     })
     hFollow.addEventListener('mouseover', function () {
         scroller13.style.marginTop = "121px";
-        scroller13.style.height = "158px";
+        scroller13.style.height = slide2Height;
 
         payEmployeesImg.classList.add('pay-employees-equity-image')
 
@@ -175,7 +177,7 @@ function scroller3(hClass1, hClass2, hClass3) {
     })
     hExchange.addEventListener('mouseover', function () {
         scroller13.style.marginTop = "242px";
-        scroller13.style.height = "178px";
+        scroller13.style.height = slide3Height;
 
         payEmployeesImg.classList.add('pay-employees-bonuses-image')
 
@@ -284,3 +286,13 @@ else {
     getSlider('.paragraph-slide7', '.paragraph-slide8', '.paragraph-slide9', '.paragraph-slide7', '.paragraph-slide8', '.paragraph-slide9')
 }
 
+
+// var hoverPlane = $(".hero-about h1");
+
+// console.time('3dfunction')
+// $(document).on("mousemove", function (e) {
+//     var ax = ($(window).innerWidth() / 2 - e.pageX) / 80;
+//     var ay = ($(window).innerHeight() / 2 - e.pageY) / 50;
+//     hoverPlane.attr("style", "transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg);-webkit-transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg);-moz-transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg)");
+// })
+// console.timeEnd('3dfunction')
