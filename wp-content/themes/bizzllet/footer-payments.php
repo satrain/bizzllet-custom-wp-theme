@@ -1,17 +1,5 @@
-<footer>
-        <div class="newsletter-section">
-            <div class="newsletter-bgr-left"></div>
-            <div class="newsletter-bgr-right"></div>
-
-            <h2>Business is easier with crypto.</h2>
-            <h3>Join the herd today and experience the full power of crypto!</h3>
-            <form>
-                <input type="email" class="email-input" placeholder="Your email address">
-                <input type="submit" class="submit-input" value="Sign Up For Early Access">
-            </form>
-        </div>
-
-        <div class="footer-section">
+<footer class="payments-footer">
+<div class="footer-section">
             <div class="footer-about-section">
                 <div class="footer-bizzllet-logo"></div>
                 <p>
@@ -33,13 +21,12 @@
             <div class="footer-nav-shortcuts">
                 <ul class="first-ul">
                     <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Policies</a></li>
+                    <li><a href="#">Our team</a></li>
                 </ul>
                 <ul class="second-ul">
                     <li><a href="#">Problem we're solving</a></li>
+                    <li><a href="#">Privacy & Cookie Policy</a></li>
                     <li><a href="#">Product feature set</a></li>
-                    <li><a href="#">Our team</a></li>
                 </ul>
             </div>
         </div>
