@@ -1,0 +1,322 @@
+.invoicing-hero {
+    width: 100vw;
+    padding-top: 180px;
+    padding-bottom: 94px;
+    background: #202832 url("../images/invoicing/invoicing-hero-bgr.svg");
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invoicing-hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.invoicing-hero-content h1,
+.invoicing-hero-content h1 span {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    font-style: normal;
+    line-height: 65px;
+    letter-spacing: 0em;
+    color: #F4F6F8;
+}
+
+.invoicing-hero .invoicing-hero-content h1 span {
+    color: #409F73;
+}
+
+.invoicing-hero-content h3 {
+    font-style: normal;
+    font-weight: 300;
+    line-height: 43px;
+    letter-spacing: 0em;
+}
+
+.invoicing-hero-content .subheading-white {
+    margin-top: 24px;
+    color: #F4F6F8;
+}
+
+.invoicing-hero-content .subheading-green {
+    color: #409F73;
+}
+
+.invoicing-hero-btn {
+    width: 337px;
+    padding: 20px 24px;
+    margin-top: 40px;
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+
+.invoicing-hero-mock {
+    width: 630px;
+    height: 398px;
+    margin-top: 24px;
+
+    background: url("../images/invoicing/invoicing-hero-mock.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 425px) {
+    .invoicing-hero {
+        padding: 120px 30px 20px;
+    }
+
+    .invoicing-hero-content {
+        align-items: center;
+    }
+
+    .invoicing-hero-mock {
+        width: 100%;
+        min-height: 300px;
+        height: auto;
+        background-size: 100%;
+    }
+
+    .subheading-green {
+        margin-top: 15px;
+    }
+
+    .invoicing-hero-btn {
+        width: 100%;
+        padding: 20px 10px;
+        font-size: 17px;
+    }
+}
+
+/* The better way to earn, transfer and manage your crypto */
+
+.invoicing-earn-transfer-manage {
+    padding-top: 130px;
+    padding-bottom: 135px;
+    background: #343e48;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.invoicing-earn-transfer-manage h2,
+.invoicing-earn-transfer-manage h2 span {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    font-style: normal;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+}
+
+.invoicing-earn-transfer-manage h2 {
+    max-width: 648px;
+}
+
+.invoicing-earn-transfer-manage h2 span {
+    color: #F0B420;
+}
+
+.invoicing-etm-content {
+    max-width: 1100px;
+    margin-top: 91px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.invoicing-etm-content > div {
+    margin-top: 65px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.invoicing-etm-content-icon  {
+    width: 112px;
+    height: 112px;
+    margin-right: 26px;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.professional-invoices-icon {
+    background: url('../images/invoicing/professional-invoices.svg');
+}
+
+.advanced-notifications-icon {
+    background: url('../images/invoicing/advanced-notifications.svg')
+}
+
+.multiple-cryptocurrencies-icon {
+    background: url('../images/invoicing/cryptocurrencies.svg');
+}
+
+.cryptocurrency-escrow-icon {
+    background: url('../images/invoicing/escrow.svg');
+}
+
+.payment-forwarding-icon {
+    background: url('../images/invoicing/payment-forwarding.svg');
+}
+
+.user-friendly-icon {
+    background: url('../images/invoicing/user-friendly.svg');
+}
+
+
+
+.invoicing-etm-content-copy h3 {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    font-style: normal;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+
+.invoicing-etm-content-copy p {
+    margin-top: 14px;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #D5DADE;
+}
+
+.invoicing-etm-content .invoicing-etm-content-copy p {
+    max-width: 346px;
+}
+
+@media screen and (max-width: 425px) {
+    .invoicing-earn-transfer-manage {
+        padding: 70px 30px 110px;
+    }
+
+    .invoicing-earn-transfer-manage h2 {
+        text-align: left;
+    }
+
+    .invoicing-etm-content {
+        margin-top: 10px;
+    }
+
+    .invoicing-etm-content > div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* Invoicing CTA (Open account) - main style is inside payments.css - here are only color changes*/
+.invoicing-cta {
+    background: #F4F6F8;
+    overflow: hidden;
+}
+
+.invoicing-cta-content {
+    background: #F0B420;
+    box-shadow: 2px 2px 9px 1px rgba(0, 0, 0, 0.25);
+}
+
+.invoicing-btn {
+    position: relative;
+    z-index: 5;
+    background: #1f2832;
+}
+
+.invoicing-cta-bison {
+    mix-blend-mode: hard-light;
+}
+
+/* Invoicing benefits - Green section */
+.invoicing-benefits {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background: #358C62 url('../images/lines-bgr.png');
+    background-position: left;
+    background-blend-mode: multiply;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.invoicing-benefits-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.invoicing-benefits-content > div {
+    position: relative;
+    padding: 40px 36px;
+    margin: 40px 35px;
+    color: #fff;
+    transition: .5s;
+    cursor: default;
+}
+
+.invoicing-benefits-content > .invoicing-content-box-active {
+    background: rgba(64,159,115,1);
+    box-shadow: 24px 33px 42px rgba(32, 40, 50, 0.04);
+    transition: .5s;
+}
+
+.invoicing-benefits-content > div::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 7px;
+    height: 100%;
+}
+
+.invoicing-benefits-content > .invoicing-content-box-active::before {
+    background: #96D9AD;
+    transition: .5s;
+}
+
+.invoicing-benefits-content div p {
+    max-width: 401px;
+}
+
+@media screen and (max-width: 425px) {
+    .invoicing-benefits {
+        padding: 70px 30px;
+    }
+
+    .invoicing-benefits-content {
+        grid-template-columns: 1fr;
+        align-items: start;
+    }
+
+    .invoicing-benefits-content > div {
+        margin: 0;
+    }
+}
+
+/* newsletter modifications */
+.invoicing-newsletter {
+    overflow: hidden;
+}
+
+.invoicing-newsletter-heading {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    line-height: 42px;
+    letter-spacing: 0em;
+}

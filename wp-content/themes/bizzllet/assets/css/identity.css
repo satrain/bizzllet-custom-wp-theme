@@ -1,0 +1,355 @@
+.identity-hero {
+    position: relative;
+    width: 100vw;
+    height: auto;
+    padding-top: 180px;
+    padding-bottom: 110px;
+    background: #202832;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.identity-hero-bgr {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1238px;
+    height: 731px;
+    background: url("../images/identity/hero-background-image.svg");
+    background-repeat: no-repeat;
+    opacity: 0.02;
+}
+
+.i-hero-content {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.i-hero-content h1 {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    text-align: center;
+    color: #fff;
+    line-height: 64.8px;
+}
+
+.i-hero-content h1 span {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    color: #F0B420;
+}
+
+.i-hero-content h3 {
+    text-align: center;
+    max-width: 430px;
+    color: #F4F6F8;
+    font-weight: 300;
+
+    margin-top: 20px;
+}
+
+.i-hero-copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 40px;
+}
+
+.i-hero-id {
+    display: flex;
+    flex-direction: column;
+}
+
+.i-hero-id > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-right: 19px;
+    color: #F4F6F8;
+    margin-top: 28px;
+}
+
+
+.i-hero-id-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 27px;
+    height: 35px;
+    margin-right: 19px;
+    background: url("../images/identity/bcv.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.i-hero-id-icon-check {
+    width: 19px;
+    height: 19px;
+    background: url("../images/identity/vector.svg");
+    background-repeat: no-repeat;
+}
+
+.i-create-btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 20px 27px;
+    background: #f0b420;
+    color: #fff;
+    margin-top: 44px;
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.i-hero-mock {
+    width: 375px;
+    height: 414px;
+    background: url("../images/identity/identity-hero-mock.png");
+    margin-left: 65px;
+}
+
+.identity-trust-online {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background: #F4F6F8;
+}
+
+.identity-trust-online > h1 {
+    width: 501px;
+    color: #1F2832;
+}
+
+.identity-trust-online > h1 > span {
+    color: #F0B420 !important;
+}
+
+.identity-trust-online-right > div > h3 {
+    color: #202832;
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+}
+
+.identity-trust-online-right > div > p {
+    color: #202832;
+}
+
+.identity-trust-online-right > div > h3 > span {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    color: #F0B420;
+}
+
+.identity-create {
+    width: 100vw;
+    height: 433px;
+
+    background: #F0B420 url('../images/identity/identity-create.png');
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.i-create-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.i-create-content h1 {
+    width: 609px;
+    height: 130px;
+
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 65px;
+    color: #1F2832;
+
+    text-align: center;
+}
+
+.i-create-content span {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    color: #fff;
+}
+
+.i-create-content div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.i-open-btn {
+    width: 327px;
+    height: 61px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 20px 27px;
+    background: #1F2832;
+    color: #fff;
+    margin-top: 44px;
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.identity-newsletter {
+    position: relative;
+    width: 100vw;
+    height: 411px;
+
+    background: #358c62;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.identity-newsletter-bgr-left {
+    position: absolute;
+    width: 434px;
+    height: 411px;
+    left: 0;
+    top: 0;
+    background: url("../images/identity/newsletter-background-image-left.svg");
+    background-repeat: no-repeat;
+}
+
+.identity-newsletter-bgr-right {
+    position: absolute;
+    width: 434px;
+    height: 411px;
+    right: 0;
+    bottom: 0;
+    background: url("../images/identity/newsletter-background-image-right.svg");
+    background-repeat: no-repeat;
+}
+
+.i-newsletter-content {
+    padding-top: 62px;
+    padding-bottom: 72px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.i-newsletter-content > h1 {
+    width: 395px;
+
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 13px;
+}
+
+.i-newsletter-content span {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    font-size: 35px;
+    font-style: normal;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: center;
+    opacity: 0.5;
+    padding-top: 20px;
+}
+
+.i-newsletter-content > h3 {
+    width: 331px;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: #fff;
+}
+
+.i-newsletter-content p {
+    width: 400px;
+    padding-top: 17px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 20px;
+
+    text-align: center;
+
+    color: #fff;
+
+}
+
+.i-newsletter-email-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding-top: 26px;
+}
+
+.i-newsletter-email {
+    border: none;
+    outline: none;
+    width: 256px;
+    height: 61px;
+
+    padding-left: 25px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 20px;
+
+    color: #202832;
+    border-left: 5px solid #202832;
+
+    background: #fff;
+}
+
+.i-newsletter-btn {
+    width: 210px;
+    height: 61px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #1F2832;
+    color: #fff;
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-align: center;
+}

@@ -1,0 +1,556 @@
+.tokenization-hero {
+    padding-top: 180px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #202832;
+}
+
+.tokenization-hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.tokenization-hero-content h1,
+.tokenization-hero-content h1 span {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    font-style: normal;
+    line-height: 65px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+}
+
+.tokenization-hero-content h1 {
+    max-width: 665px;
+}
+
+.tokenization-hero-content h1 span {
+    color: #358C62;
+}
+
+.tokenization-hero-content h3 {
+    margin-top: 24px;
+    margin-bottom: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0em;
+    color: #f4f6f8;
+}
+
+.tokenization-hero-mock {
+    width: 640px;
+    height: 423px;
+    margin-top: 40px;
+
+    background: url('../images/tokenization/tokenization-hero-mock.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .tokenization-hero {
+        padding: 120px 30px 20px;
+    }
+
+    .tokenization-hero-mock {
+        width: 100%;
+        height: 370px;
+        background-size: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .tokenization-hero {
+        padding: 120px 30px 20px;
+    }
+
+    .tokenization-hero-content h1, 
+    .tokenization-hero-content h1 span {
+        text-align: left;
+        line-height: 1.2 !important;
+    }
+
+    .tokenization-hero-mock {
+        width: 100%;
+        height: 300px;
+        background-size: 100%;
+    }
+
+    .tokenization-hero .hero-btn {
+        text-align: center;
+    }
+}
+
+/* What is asset tokenization? */
+.tokenization-what-is {
+    position: relative;
+    padding-top: 126px;
+    padding-bottom: 176px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: #e8ecef url("../images/lines-bgr.png");
+    background-blend-mode: multiply;
+}
+
+.tokenization-what-is .cross-bgr-icon {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background: url('../images/cross.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    mix-blend-mode: multiply;
+}
+
+.tokenization-what-is .place1 {
+    top: 64px;
+    left: 743px;
+}
+
+.tokenization-what-is .place2 {
+    top: 350px;
+    right: 385px;
+}
+
+.tokenization-what-is h1,
+.tokenization-what-is h1 span {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    font-style: normal;
+    line-height: 65px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #202832;
+}
+
+.tokenization-what-is h1 span {
+    color: #358C62;
+}
+
+.what-is-subheading1 {
+    margin-top: 30px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 31px;
+    text-align: center;
+    color: #202832;
+}
+
+.what-is-subheading2 {
+    font-weight: 700;
+    font-style: normal;
+    line-height: 31px;
+    text-align: center;
+    color: #202832;
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .tokenization-what-is {
+        padding: 70px 30px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .tokenization-what-is {
+        padding: 70px 30px;
+    }
+
+    .tokenization-what-is h1,
+    .tokenization-what-is h1 span {
+        text-align: left;
+        line-height: 1.2 !important;
+    }
+
+    .what-is-subheading1,
+    .what-is-subheading2 {
+        text-align: left;
+    }
+
+    .what-is-subheading2 {
+        margin-top: 12px;
+    }
+}
+
+/* Bizzllet features */
+.tokenization-bizzllet-features {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    background: #3d4954 url('../images/tokenization/bizzllet-features-bgr.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.tokenization-bizzllet-features h1,
+.tokenization-bizzllet-features h1 span {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    font-style: normal;
+    line-height: 65px;
+    letter-spacing: 0em;
+    color: #fff;
+}
+
+.tokenization-bizzllet-features h1 span {
+    color: #F0B420;
+}
+
+.bizzllet-features-icons {
+    margin-top: 74px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bizzllet-features-icons > div {
+    width: 90px;
+    height: 90px;
+    margin-left: 33px;
+    margin-right: 33px;
+    transform: scale(1);
+    transition: .5s;
+}
+
+.issuance-icon {
+    background: url('../images/tokenization/token-issuance.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.crowdfunding-icon {
+    background: url('../images/tokenization/crowdfunding.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.distribution-icon {
+    background: url('../images/tokenization/token-distribution.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.marketplace-icon {
+    background: url('../images/tokenization/marketplace.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bizzllet-features-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 68px;
+}
+
+.bizzllet-features-container > div {
+    display: none;
+    height: 120px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.bizzllet-features-container > div > h3,
+.bizzllet-features-container > div > h3 span {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    font-style: normal;
+    line-height: 29px;
+    letter-spacing: 0em;
+    color: #fff;
+}
+
+.bizzllet-features-container > div > h3 {
+    margin-bottom: 20px;
+    color: #F0B420;
+}
+
+.features-copy {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #F4F6F8;
+}
+
+.features-issuance {
+    max-width: 558px;
+}
+
+.features-crowdfunding {
+    max-width: 654px;
+}
+
+.features-distribution {
+    max-width: 621px;
+}
+
+.features-marketplace {
+    max-width: 450px;
+}
+
+.features-icon-active {
+    transform: scale(1.2) !important;
+    transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+}
+
+.features-box-active {
+    display: flex !important;
+    animation: .5s fadeIn;
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .tokenization-bizzllet-features {
+        padding: 70px 30px;
+    }
+
+    .bizzllet-features-icons {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .tokenization-bizzllet-features {
+        padding: 70px 30px;
+        align-items: flex-start;
+    }
+
+    .bizzllet-features-icons {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
+    }
+
+    .bizzllet-features-container {
+        justify-content: flex-start;
+    }
+
+    .bizzllet-features-container > div {
+        align-items: flex-start;
+    }
+
+    .features-copy {
+        text-align: left;
+    }
+}
+
+/* Tokenization cta */
+.tokenization-cta {
+    padding-top: 87px;
+    padding-bottom: 87px;
+    background: #1f2832;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tokenization-cta-content {
+    position: relative;
+    width: 1038px;
+    max-width: 1038px;
+    padding-top: 47px;
+    padding-bottom: 47px;
+    overflow: hidden;
+    background: #EFB420;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tokenization-cta-bgr-left {
+    width: 296.86px;
+    height: 281px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url('../images/newsletter-bgr-left.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tokenization-cta-bgr-right {
+    width: 296.86px;
+    height: 281px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url('../images/newsletter-bgr-right.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tokenization-cta-content h2 {
+    position: relative;
+    z-index: 2;
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    font-style: normal;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.tokenization-btn {
+    position: relative;
+    z-index: 2;
+    margin-top: 36px;
+    padding: 20px 86px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .tokenization-cta {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .tokenization-cta-content {
+        padding: 70px 30px;
+    }
+
+    .tokenization-cta-bgr-right {
+        display: none;
+    }
+
+    .tokenization-cta-bgr-left {
+        left: -33px;
+    }
+
+    .tokenization-cta-content h2 {
+        text-align: left;
+    }
+
+    .tokenization-btn {
+        padding: 20px 32px;
+    }
+}
+
+/* What can be tokenized? */
+.what-can-be-tokenized {
+    padding-top: 125px;
+    padding-bottom: 147px;
+    background: #358c62 url('../images/lines-bgr.png');
+    background-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wcb-tokenized-content {
+    width: 1038px;
+    max-width: 1038px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wcb-tokenized-content h1,
+.wcb-tokenized-content h1 span {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    font-style: normal;
+    line-height: 65px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+
+.wcb-tokenized-content h1 span {
+    opacity: 0.5;
+}
+
+.wcb-tokenized-copy {
+    margin-top: 84px;
+    display: grid;
+    grid-template-columns: repeat(2, 361px);
+    column-gap: 68px;
+    row-gap: 59px;
+}
+
+.wcb-tokenized-copy > div {
+    max-width: 361px;
+}
+
+.wcb-tokenized-copy > div > h3 {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    font-style: normal;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #fff;
+}
+
+.wcb-tokenized-copy > div > p {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #F4F6F8;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .what-can-be-tokenized {
+        padding: 70px 30px;
+    }
+
+    .wcb-tokenized-copy {
+        margin-top: 50px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .what-can-be-tokenized {
+        padding: 70px 30px;
+    }
+
+    .wcb-tokenized-content {
+        align-items: center;
+    }
+
+    .wcb-tokenized-copy {
+        margin-top: 50px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .what-can-be-tokenized {
+        padding: 70px 30px;
+    }
+
+    .wcb-tokenized-content {
+        width: 100%;
+    }
+
+    .wcb-tokenized-content h1,
+    .wcb-tokenized-content h1 span {
+        line-height: 1.2 !important;
+    }
+
+    .wcb-tokenized-copy {
+        margin-top: 50px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Newsletter */
+.tokenization-newsletter-copy {
+    margin-top: 12px;
+}

@@ -59,6 +59,22 @@
     }
 }
 
+@keyframes rotate {
+    from {}
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -109,6 +125,66 @@ h3 {
     transition: .5s;
     background: transparent;
     border: 2px solid #358C62;
+}
+
+.preloader {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: #343E48;
+    z-index: 1000;
+    opacity: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .preloader-main-circle {
+    width: 150px;
+    height: 150px;
+    border:4px solid #D79713;
+    border-top: 4px solid transparent  ;
+      border-right:4px solid transparent;
+    position:relative;
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 2s infinite;
+  }
+  .preloader-main-circle:before {
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    content:'';
+    border:4px solid transparent;
+    border-right:4px solid #D79713;
+    transform: rotate(40deg);
+    border-radius:50%;
+  }
+  .preloader-brown-circle {
+        animation: rotate 2s infinite .6s;
+      width: 120px;
+    height: 120px;
+    border:4px solid #358C62;
+      border-top:4px solid transparent;
+    border-right:4px solid transparent;
+    transform: rotate(-20deg);
+    border-radius:50%;
+  }
+  
+
+.fadeOut{
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s ease-in-out;
 }
 
 /* --- Header Style Starts Here --- */
@@ -189,6 +265,30 @@ header .nav nav ul li button:focus {
     outline: none;
 }
 
+.nav-li-solutions {
+    position: relative;
+}
+
+.solutions-submenu {
+    height: 150px;
+    padding-top: 10px;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.solutions-submenu a {
+    font-size: 16px !important;
+    margin-top: 5px;
+    margin-left: 8px;
+}
+
+.nav-li-solutions:hover .solutions-submenu {
+    display: flex !important;
+}
+
 #hamburger {
     position: relative;
     width: 36px;
@@ -208,7 +308,6 @@ header .nav nav ul li button:focus {
 #hero {
     position: relative;
     width: 100%;
-    height: 1250px;
     padding: 223px 260px 160px;
     background: #202832;
     display: flex;
@@ -333,13 +432,14 @@ header .nav nav ul li button:focus {
     outline: none;
 }
 
-.hero-mock {
-    width: 859px;
-    height: 579px;
+.hero-mockup-image {
+    width: 914px;
+    height: 629px;
     margin-top: 60px;
-    background: transparent;
+    background: url('../images/bizzllet-hero-mockup.png');
+    background-repeat: no-repeat;
+    background-position: top 0 right -20px;
     z-index: 5;
-    border: 2px solid lightgray;
 }
 
 /* --- /Hero Style Ends Here --- */
@@ -440,26 +540,26 @@ header .nav nav ul li button:focus {
 }
 
 .simplify-payments-image {
-    width: 475px;
-    height: 458px;
+    width: 620px;
+    height: 600px;
 }
 
 .simplify-payments-pay-image {
-    background: url('../images/simplify-payments-pay.svg');
+    background: url('../images/simplify-payments-pay-min.png');
     background-repeat: no-repeat;
     background-size: 100%;
     transition: 1s;
 }
 
 .simplify-payments-follow-image {
-    background: url('../images/simplify-payments-follow.svg');
+    background: url('../images/simplify-payments-follow-min.png');
     background-repeat: no-repeat;
     background-size: 100%;
     transition: 1s;
 }
 
 .simplify-payments-exchange-image {
-    background: url('../images/simplify-payments-exchange.svg');
+    background: url('../images/simplify-payments-exchange-min.png');
     background-repeat: no-repeat;
     background-size: 100%;
     transition: 1s;
@@ -537,7 +637,7 @@ header .nav nav ul li button:focus {
 
 .paragraph-slider-scroll{
     margin-top: 121px;
-    height: 198px;
+    height: 258px;
     width: 7px;
     background: #D79713;
     transition: all .4s;
@@ -545,7 +645,7 @@ header .nav nav ul li button:focus {
 
 .paragraph-slider-scroll2{
     margin-top: 121px;
-    height: 198px;
+    height: 238px;
     width: 7px;
     background: #96D9AD;
     transition: all .4s;
@@ -553,7 +653,7 @@ header .nav nav ul li button:focus {
 
 .paragraph-slider-scroll3{
     margin-top: 121px;
-    height: 158px;
+    height: 238px;
     width: 7px;
     background: #D79713;
     transition: all .4s;
@@ -663,28 +763,26 @@ header .nav nav ul li button:focus {
 }
 
 .make-invoices-image {
-    width: 512px;
-    height: 500px;
+    width: 620px;
+    height: 605px;
 }
 
 .make-invoices-send-image {
-    background: url('../images/make-invoices-send.svg');
+    background: url('../images/make-invoices-send-min.png');
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: bottom;
     transition: 1s;
 }
 
 .make-invoices-settlements-image {
-    background: url('../images/make-invoices-settlements.svg');
+    background: url('../images/make-invoices-settlements-min.png');
     background-repeat: no-repeat;
     background-size: 100%;
     transition: 1s;
-    background-position: bottom;
 }
 
 .make-invoices-accounting-image {
-    background: url('../images/make-invoices-accounting.svg');
+    background: url('../images/make-invoices-accounting-min.png');
     background-repeat: no-repeat;
     background-size: 100%;
     transition: 1s;
@@ -732,26 +830,26 @@ header .nav nav ul li button:focus {
 }
 
 .pay-employees-image {
-    width: 567px;
-    height: 530px;
+    width: 620px;
+    height: 600px;
 }
 
 .pay-employees-salaries-image {
-    background: url('../images/pay-employees-salaries.svg');
+    background: url('../images/pay-employees-salaries-min.png');
     background-repeat: no-repeat;
     background-size: 100%;
     transition: 1s;
 }
 
 .pay-employees-equity-image {
-    background: url('../images/pay-employees-equity.svg');
+    background: url('../images/pay-employees-equity-min.png');
     background-repeat: no-repeat;
     background-size: 100%;
     transition: 1s;
 }
 
 .pay-employees-bonuses-image {
-    background: url('../images/pay-employees-bonuses.svg');
+    background: url('../images/pay-employees-bonuses-min.png');
     background-repeat: no-repeat;
     background-size: 100%;
     transition: 1s;
@@ -819,7 +917,7 @@ header .nav nav ul li button:focus {
     background: #F0B420 url('../images/lines-bgr.png');
     background-position: left;
     background-blend-mode: soft-light;
-    padding: 163px 322px 141px 192px;
+    padding: 163px 322px 141px 0;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -835,7 +933,7 @@ header .nav nav ul li button:focus {
     flex-direction: row;
 }
 
-.number-heading .number-order {
+#digital-identity .number-heading .number-order {
     color: #fff;
     margin-right: 15px;
 }
@@ -857,6 +955,7 @@ header .nav nav ul li button:focus {
 
 .paragraph-section p,
 .paragraph-section .heading-paragraph {
+	max-width: 700px;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -889,6 +988,11 @@ header .nav nav ul li button:focus {
     flex-direction: column;
 }
 
+.id-elements .id-element h3 {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    color: #202932;
+}
+
 .image-section .mockup {
     width: 522px;
     height: 542px;
@@ -915,6 +1019,15 @@ header .nav nav ul li button:focus {
 }
 
 
+.digital-identity-image {
+    width: 643px;
+    height: 512px;
+
+    background: url('../images/digital-identity-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* --- /Manage Digital Identity --- */
 
 /* --- Tokenize Assets --- */
@@ -925,7 +1038,7 @@ header .nav nav ul li button:focus {
     background: #E5E5E5 url('../images/lines-bgr.png');
     background-position: left;
     background-blend-mode: soft-light;
-    padding: 163px 322px 141px 72px;
+    padding: 163px 0 141px 72px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -964,6 +1077,15 @@ header .nav nav ul li button:focus {
     margin-left: 20px;
 }
 
+.tokenize-assets-image {
+    width: 643px;
+    height: 512px;
+
+    background: url('../images/tokenize-assets-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* --- /Tokenize Assets --- */
 
 /* --- Commerce Business --- */
@@ -975,7 +1097,7 @@ header .nav nav ul li button:focus {
     background: #D5DADE url('../images/lines-bgr.png');
     background-position: left;
     background-blend-mode: soft-light;
-    padding: 163px 322px 141px 192px;
+    padding: 163px 322px 141px 0;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -1007,6 +1129,15 @@ header .nav nav ul li button:focus {
 
 #commerce-business .learn-more img {
     margin-left: 20px;
+}
+
+.commerce-business-image {
+    width: 643px;
+    height: 512px;
+
+    background: url('../images/commerce-business-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -1350,15 +1481,16 @@ header .nav nav ul li button:focus {
     margin-top: 12px;
     width: 100%;
     height: calc(100% - (185px + 12px));
-    background: url('../images/person4.jpg');
+    background: url('../images/person4-min.jpg');
     background-size: cover;
     background-position: right;
+    background-repeat: no-repeat;
 }
 
 .gallery-item3 {
     width: 100%;
     height: 270px;
-    background: url('../images/person3.jpg');
+    background: url('../images/person3-min.jpg');
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -1382,17 +1514,19 @@ header .nav nav ul li button:focus {
     width: 100%;
     height: calc(100% - (270px + 12px));
     margin-top: 12px;
-    background: url('../images/person6.jpg');
+    background: url('../images/person6-min.jpg');
     background-size: cover;
     background-position: top;
+    background-repeat: no-repeat;
 }
 
 .gallery-item7 {
     width: 100%;
     height: 270px;
-    background: url('../images/person2.jpg');
+    background: url('../images/person2-min.jpg');
     background-size: cover;
     background-position: right;
+    background-repeat: no-repeat;
 }
 
 .gallery-item8 {
@@ -1408,15 +1542,17 @@ header .nav nav ul li button:focus {
     background: url('../images/person5.JPG');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     margin-right: 12px;
 }
 
 .gallery-subitem4:nth-child(2) {
     width: calc((100% - 24px) / 3);
     height: 100%;
-    background: url('../images/person1.jpg');
+    background: url('../images/person1-min.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     margin-right: 12px;
 }
 
@@ -1475,6 +1611,7 @@ header .nav nav ul li button:focus {
     background-blend-mode: soft-light;
     padding-left: 423px;
     padding-bottom: 102px;
+	margin-top: -1px;
 }
 
 #questions h2 {
@@ -1537,7 +1674,7 @@ footer {
     position: absolute;
     width: 296.86px;
     height: 100%;
-    background: url('../images/newsletter-bgr-left.png');
+    background: url('../images/newsletter-bgr-left.svg');
     background-size: cover;
     top: 0;
     left: 0;
@@ -1548,7 +1685,7 @@ footer {
     position: absolute;
     width: 294.1px;
     height: 100%;
-    background: url('../images/newsletter-bgr-right.png');
+    background: url('../images/newsletter-bgr-right.svg');
     background-size: cover;
     top: 0;
     right: 0;
@@ -1608,6 +1745,10 @@ footer {
     outline: none;
 }
 
+.newsletter-section form .email-input::placeholder {
+    color: #202832;
+}
+
 .newsletter-section form .submit-input {
     width: 264px;
     height: 60.95px;
@@ -1621,6 +1762,12 @@ footer {
     letter-spacing: 0.015em;
     color: #fff;
     cursor: pointer;
+    transition: .5s;
+}
+
+.newsletter-section form .submit-input:hover {
+    background: #343E48;
+    transition: .5s;
 }
 
 .newsletter-section form .submit-input {
@@ -1680,12 +1827,18 @@ footer {
 .footer-ellipse {
     width: 50px;
     height: 50px;
+    border-radius: 50%;
     background: url('../images/footer-ellipse.png');
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
+
+.footer-ellipse:hover {
+    background: #D89713;
+    transition: .5s;
 }
 
 .footer-nav-shortcuts {
@@ -1746,7 +1899,7 @@ footer {
 
 @media (min-width: 1681px) and (max-width: 1800px) {
     #digital-identity {
-        padding: 163px 117px 141px 192px;
+        padding: 163px 117px 141px 0;
     }
 }
 
@@ -1763,11 +1916,19 @@ footer {
     }
 
     #digital-identity,
-    #tokenize-assets,
     #commerce-business {
-        padding: 163px 21px 141px 50px;
+        padding: 163px 21px 141px 0;
     }
+	
+	 #tokenize-assets {
+		 padding: 163px 0 141px 21px;
+	}
 
+	.digital-identity-image {
+		width: calc(643px / 1.15);
+		height: calc(512px / 1.15);
+	}
+	
     #how-bizzllet {
         padding: 104px 90px 148px;
     }
@@ -1834,10 +1995,18 @@ footer {
     }
 
     #digital-identity,
-    #tokenize-assets,
     #commerce-business {
-        padding: 163px 21px 141px 50px;
+        padding: 163px 21px 141px 0;
     }
+	
+    #tokenize-assets {
+		padding: 163px 0 141px 21px;			
+	}
+	
+	.digital-identity-image {
+		width: calc(643px / 1.5);
+		height: calc(512px / 1.5);
+	}
 
     #why-us {
         padding: 99px 10px 148px;
@@ -1890,12 +2059,36 @@ footer {
     }
 
     #digital-identity,
-    #tokenize-assets,
     #commerce-business {
-        padding: 110px 70px 120px;
+        padding: 110px 70px 120px 0;
         flex-wrap: wrap;
-        justify-content: center;
+		flex-wrap: nowrap;	
+		justify-content: flex-end;
     }
+	
+	#digital-identity .paragraph-section,
+	#commerce-business .paragraph-section {
+		margin-left: 25px;	
+	}
+	
+	#tokenize-assets {
+		padding: 110px 0 120px 70px;
+	}
+	
+	#digital-identity .number-heading,
+	#commerce-business .number-heading {
+		margin-left: -630px;	
+	}
+	
+	#digital-identity .paragraph-section .heading-paragraph,
+	#commerce-business .paragraph-section .heading-paragraph {
+		margin-left: -570px;	
+	}	
+
+	.id-elements {
+		width: 320px;
+		flex-direction: column;
+	}
 
     .number-heading .number-order {
         font-size: 36px;
@@ -2138,6 +2331,14 @@ footer {
     .hero-mock {
         width: 100%;
     }
+	
+	.hero-mockup-image {
+		width: 100%;
+		height: 200px;
+		margin-top: 100px;
+		background-position: top 0 right -10px;
+		background-size: 100%;
+	}
 
     .subhero {
         padding: 70px 30px 100px;
@@ -2168,6 +2369,18 @@ footer {
         padding: 100px 30px 122px;
     }
 
+    .digital-identity-image,
+    .tokenize-assets-image,
+    .commerce-business-image {
+        width: 100vw;
+        height: 300px;
+    }
+
+    .digital-identity-image,
+    .commerce-business-image {
+        margin-left: -30px;
+    }
+
     .number-order {
         display: block;
     }
@@ -2182,10 +2395,14 @@ footer {
     .simplify-payments-image,
     .make-invoices-image,
     .pay-employees-image {
-        width: 320px;
+        width: 360px;
         height: 320px;
-        margin: 70px 0 0;
-        background-size: 80% 80%;
+        margin: 20px 0 0;
+        background-size: cover;
+    }
+
+    .paragraph-slider {
+        padding-top: 0;
     }
 
     .paragraph-slide {
@@ -2312,12 +2529,6 @@ footer {
     .features-image-container {
         width: 100%;
         height: 100%;
-    }
-
-    .simplify-payments-image,
-    .make-invoices-image,
-    .pay-employees-image {
-        background-size: 100% 100%;
     }
 
     .simplify-payments-pay-image {
@@ -2496,7 +2707,7 @@ footer {
     }
 
     footer {
-        padding: 123px 0 70px;
+        padding: 0 0 70px;
     }
 
     .newsletter-section {
@@ -2512,6 +2723,16 @@ footer {
 
     .newsletter-section h3 {
         text-align: left;
+    }
+
+    .newsletter-bgr-right {
+        display: none;
+    }
+
+    .newsletter-bgr-left {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        left: -23px;
     }
 
     .newsletter-section form {

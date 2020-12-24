@@ -1,0 +1,1290 @@
+.payments-hero {
+    width: 100vw;
+    height: auto;
+    padding-top: 180px;
+    padding-bottom: 110px;
+    background: #202832;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.p-hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-hero-content h1 {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    text-align: center;
+    color: #fff;
+    line-height: 64.8px;
+}
+
+.p-hero-content h1 span {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    color: #F0B420;
+}
+
+.p-hero-content h3 {
+    text-align: center;
+    max-width: 386px;
+    color: #fff;
+    font-weight: 300;
+
+    margin-top: 20px;
+}
+
+.payments-hero-mock {
+    width: 685px;
+    height: 494px;
+
+    background-image: url('../images/payments/payments-hero-mock.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* SUBHERO */
+.payments-subhero {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+
+    margin-top: 65px;
+}
+
+.p-subhero-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    /* cursor: crosshair; */
+    cursor: context-menu;
+
+    margin-left: 55px;
+    margin-right: 55px;
+}
+
+.p-seamless {
+    transition: .5s;
+}
+
+.p-adaptable {
+    transition: .5s;
+}
+
+.p-secure {
+    transition: .5s;
+}
+
+.payments-subhero h3 {
+    color: #fff;
+    font-weight: 700;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    transition: .5s;
+}
+
+.p-subhero-copy {
+    text-align: center;
+    max-width: 235px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 27.2px;
+}
+
+.p-seamless-icon {
+    width: 64px;
+    height: 59.8px;
+
+    background-image: url('../images/payments/seamless.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.p-adaptable-icon {
+    width: 63.1px;
+    height: 59.8px;
+
+    background-image: url('../images/payments/adaptable.svg');
+    background-repeat: no-repeat;
+}
+
+.p-secure-icon {
+    width: 56px;
+    height: 59.8px;
+
+    background-image: url('../images/payments/secure.svg');
+    background-repeat: no-repeat;
+}
+
+.p-adaptable-copy {
+    max-width: 282px;
+}
+
+.p-secure-copy {
+    max-width: 238px;
+}
+
+.p-subhero-box-border {
+    transform: scaleX(0);
+    margin-top: 15px;
+    width: 96px;
+    height: 5px;
+    background: #F0B420;
+    transition: .5s;
+}
+
+/* SUBHERO HOVER EFFECTS */
+.p-seamless:hover {
+    transform: scale(1.2);
+    transition: .5s;
+}
+
+.p-seamless:hover .p-seamless-heading {
+    color: #F0B420;
+    transition: .5s;
+}
+
+.p-seamless:hover .p-subhero-box-border {
+    transform: scaleX(1);
+    transition: .5s;
+}
+
+.p-adaptable:hover {
+    transform: scale(1.2);
+    transition: .5s;
+}
+
+.p-adaptable:hover .p-adaptable-heading {
+    color: #F0B420;
+    transition: .5s;
+}
+
+.p-adaptable:hover .p-subhero-box-border {
+    transform: scaleX(1);
+    transition: .5s;
+}
+
+.p-secure:hover {
+    transform: scale(1.2);
+    transition: .5s;
+}
+
+.p-secure:hover .p-secure-heading {
+    color: #F0B420;
+}
+
+.p-secure:hover .p-subhero-box-border {
+    transform: scaleX(1);
+    transition: .5s;
+}
+
+@media screen and (max-width: 425px) {
+    .payments-hero {
+        padding: 150px 30px 20px;
+    }
+
+    .p-hero-content h1 {
+        font-size: 42px;
+        text-align: left;
+    }
+
+    .p-hero-content h1 br {
+        display: none;
+    }
+
+    .p-hero-content h3 {
+        text-align: left;
+    }
+
+    .payments-hero-mock {
+        width: 100%;
+        height: 300px;
+        background-size: 100%;
+        background-position: left;
+        margin-top: 10px;
+    }
+
+    .payments-subhero {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 70px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .p-subhero-box {
+        margin-left: 0;
+        margin-right: 0;
+
+        align-items: flex-start;
+    }
+
+    .p-subhero-box h3 {
+        font-size: 30px;
+    }
+
+    .p-subhero-copy {
+        text-align: left;
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .p-adaptable:hover,
+    .p-seamless:hover,
+    .p-secure:hover {
+        transform: scale(1);
+    }
+
+    .p-seamless:hover .p-subhero-box-border,
+    .p-adaptable:hover .p-subhero-box-border,
+    .p-secure:hover .p-subhero-box-border {
+        transform: scaleX(0);
+    }
+}
+
+/* WHY CRYPTO */
+.payments-why-crypto {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 71px;
+    padding-bottom: 71px;
+
+    background: #E8ECEF url('../images/payments/why-crypto-bgr.svg');
+    background-repeat: no-repeat;
+}
+
+.payments-why-crypto h2 {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    line-height: 43.2px;
+}
+
+.p-benefits {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 62px;
+    margin-bottom: 68px;
+}
+
+.p-more-efficient {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.p-more-efficient {
+    margin-left: 95px;
+    margin-right: 95px;
+}
+
+.p-lower-fees {
+    margin-left: 95px;
+    margin-right: 95px;
+}
+
+.p-benefits-heading {
+    color: #D79713;
+    font-weight: 700;
+    line-height: 28.8px;
+    margin-bottom: 15px;
+}
+
+.p-benefits-heading span {
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 800;
+    color: #202832;
+    margin-right: 5px;
+}
+
+.p-benefits-copy {
+    max-width: 300px;
+    line-height: 28.8px;
+    color: #343E48;
+    font-weight: 400;
+}
+
+.payments-btn {
+    text-decoration: none;
+    outline: none;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.6px;
+    letter-spacing: 5%;
+    text-align: center;
+
+    background: #202832;
+    border: 2px solid #202832;
+    padding: 20px 28px;
+
+    transition: .5s;
+}
+
+.payments-btn:hover {
+    background: transparent;
+    color: #202832;
+    transition: .5s;
+}
+
+@media screen and (max-width: 425px) {
+    .payments-why-crypto {
+        align-items: flex-start;
+        padding: 70px 30px;
+
+        background-position: top 0 left -45px;
+    }
+
+    .payments-why-crypto h2{
+        font-size: 36px;
+    }
+
+    .p-benefits {
+        flex-direction: column;
+        justify-content: flex-start;
+
+        margin-top: 50px;
+    }
+
+    .p-more-efficient {
+        margin-bottom: 40px;
+    }
+
+    .p-more-efficient,
+    .p-lower-fees {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .p-benefits-heading {
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+
+    .p-benefits-heading span{
+        font-size: 32px;
+    }
+
+    .payments-btn {
+        width: 100%;
+    }
+}
+
+/* DIGITAL CURRENCY PAYMENTS */
+.digital-currency-payments {
+    position: relative;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    padding-left: 520px;
+
+    background: #D5DADE url('../images/lines-bgr.png');
+    background-position: left;
+    background-blend-mode: multiply;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.digital-currency-payments .cross-bgr-icon,
+.get-started .cross-bgr-icon {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background: url('../images/cross.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    mix-blend-mode: multiply;
+}
+
+.digital-currency-payments .place1,
+.get-started .place1 {
+    top: 105px;
+    left: 994.5px;
+}
+
+.digital-currency-payments .place2,
+.get-started .place2 {
+    top: 600px;
+    left: 241px;
+}
+
+.p-digital-currency-content h1{
+    max-width: 413px;
+
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    line-height: 65px;
+    
+    color: #202832;
+}
+
+.p-digital-currency-content h1 span {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    color: #D79713;
+    line-height: 65px;
+}
+
+.p-digital-currency-content p {
+    max-width: 396px;
+    margin-top: 24px;
+
+    font-size: 17px;
+    line-height: 1.2;
+    font-weight: 400;
+    
+    color: #202932;
+}
+
+.p-digital-currency-mock {
+    width: 660px;
+    height: 500px;
+
+    background-image: url('../images/payments/digital-currency-payments-mock.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+
+@media (min-width: 1280px) and (max-width: 1600px) {
+    .digital-currency-payments {
+        padding-left: 210px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .p-digital-currency-content h1,
+    .p-digital-currency-content h1 span {
+        line-height: 56px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .digital-currency-payments {
+        padding-left: 70px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .digital-currency-payments {
+        padding-left: 70px;
+    }
+
+    .p-digital-currency-mock {
+        width: calc(660px / 2);
+        height: calc(500px / 1.8);
+        background-size: cover;
+    }
+
+    .p-digital-currency-content h1,
+    .p-digital-currency-content h1 span {
+        line-height: 46px;
+    }
+
+    .digital-currency-payments .cross-bgr-icon,
+    .get-started .cross-bgr-icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .digital-currency-payments {
+        padding-bottom: 70px;
+        padding-top: 70px;
+
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .p-digital-currency-mock {
+        align-self: flex-end;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .digital-currency-payments {
+        padding: 70px 0;
+    }
+
+    .p-digital-currency-content {
+        padding: 0 30px 70px;
+    }
+}
+
+/* WHAT CAN YOU DO WITH BIZZLLET*/
+.payments-do {
+    position: relative;
+    padding-top: 148px;
+    padding-bottom: 241px;
+
+    background: #202832 url('../images/lines-bgr.png');
+    background-position: left;
+    background-blend-mode: soft-light;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.payments-do .cross-bgr-icon {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background: url('../images/cross.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    mix-blend-mode: soft-light;
+}
+
+.payments-do .place1 {
+    top: 116px;
+    left: 492px;
+}
+
+.payments-do .place2 {
+    top: 686px;
+    left: 994.4px;
+}
+
+.payments-do h2 {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.payments-do h2 span {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    line-height: 1.2;
+    color: #F0B420;
+}
+
+.p-do-icons {
+    margin-top: 76px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-do-icons div {
+    margin-left: 33px;
+    margin-right: 33px;
+}
+
+.p-market-trends-icon {
+    width: 114px;
+    height: 114px;
+
+    background-image: url('../images/payments/follow-trends.svg');
+    background-repeat: no-repeat;
+    transition: .2s;
+}
+
+.p-crypto-icon {
+    width: 114px;
+    height: 114px;
+
+    background: url('../images/payments/buy-sell.svg');
+    background-repeat: no-repeat;
+    transition: .2s;
+}
+
+.p-digital-currencies {
+    width: 114px;
+    height: 114px;
+
+    background: url('../images/payments/exchange-crypto.svg');
+    background-repeat: no-repeat;
+    transition: .2s;
+}
+
+.p-currencies {
+    width: 114px;
+    height: 114px;
+
+    background: url('../images/payments/send-receive.svg');
+    background-repeat: no-repeat;
+    transition: .2s;
+}
+
+/* active classes */
+.p-follow-trends-active {
+    transform: scale3d(1.1);
+    vertical-align: middle;
+
+    background: url('../images/payments/follow-trends-hover.svg');
+    background-repeat: no-repeat;
+    transition: .3s;
+}
+
+.p-crypto-icon-active {
+    transform: scale3d(1.1);
+    vertical-align: middle;
+
+    background: url('../images/payments/buy-sell-hover.svg');
+    background-repeat: no-repeat;
+    transition: .3s;
+}
+
+.p-digital-currencies-active {
+    transform: scale3d(1.1);
+    vertical-align: middle;
+
+    background: url('../images/payments/exchange-crypto-hover.svg');
+    background-repeat: no-repeat;
+    transition: .3s;
+}
+
+.p-currencies-active {
+    transform: scale3d(1.1);
+    vertical-align: middle;
+
+    background: url('../images/payments/send-receive-hover.svg');
+    background-repeat: no-repeat;
+    transition: .3s;
+}
+/* /active classes */
+
+.p-do-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.p-do-content-market-trends {
+    margin-top: 77px;
+    height: 143px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-do-content-heading {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    line-height: 29px;
+    letter-spacing: 0em;
+    color: #fff;
+}
+
+.p-do-content-heading span {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    line-height: 29px;
+    letter-spacing: 0em;
+    color: #F0B420;
+}
+
+.p-do-content-copy {
+    max-width: 615px;
+    margin-top: 26px;
+
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    color: #F4F6F8;
+}
+
+.p-do-content-crypto {
+    display: none;
+    margin-top: 77px;
+    height: 143px;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-do-content-digital-currencies {
+    display: none;
+    margin-top: 77px;
+    height: 143px;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-do-content-currencies {
+    display: none;
+    margin-top: 77px;
+    height: 143px;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+    .payments-do {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .p-currencies-active,
+    .p-follow-trends-active,
+    .p-digital-currencies-active,
+    .p-crypto-icon-active {
+        transform: scale3d(1);
+    }
+
+    .payments-do .cross-bgr-icon {
+        display: none;
+    }
+}
+
+@media (min-width: 606px) and (max-width: 768px) {
+    .p-do-icons {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    .payments-do {
+        padding: 70px 30px 150px;
+    }
+
+    .p-do-icons {
+        margin-top: 38px;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .p-do-icons div {
+        width: calc(114px / 1.5);
+        height: calc(114px / 1.5);
+        margin-top: 33px;
+        margin-bottom: 33px;
+        background-size: cover;
+    }
+
+    .p-do-content-market-trends {
+        align-items: flex-start;
+    }
+
+    .p-do-content {
+        margin-top: 39px;
+    }
+
+    .p-do-content-heading {
+        text-align: left;
+    }
+
+    .p-do-content-copy {
+        text-align: left;
+    }
+}
+
+/* PAYMENTS CTA */
+.payments-cta {
+    position: relative;
+    width: 100vw;
+    height: 531px;
+
+    background: #D7DBDD;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payments-cta-bison {
+    position: absolute;
+    width: 699px;
+    height: 420px;
+    right: -170px;
+    bottom: -110px;
+    z-index: 1;
+
+    background: url('../images/payments/cta-bizon-bgr.png');
+    background-repeat: no-repeat;
+}
+
+.payments-cta-content {
+    position: relative;
+    width: 1232px;
+    height: 311px;
+    padding: 96px 158px;
+
+    background: #358C62;
+    box-shadow: 2px 2px 9px 1px rgba(0, 0, 0, 0.25); 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.payments-cta-content::before {
+    content: "";
+    background: url('../images/payments/cta-bizon-dark.svg');
+    background-repeat: no-repeat;
+    background-position: top 0 right 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.4;
+}
+
+.payments-cta-content h2 {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    color: #fff;
+
+    margin-bottom: 16px;
+}
+
+.payments-cta-content h2 span {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    color: #202832;
+}
+
+.payments-cta .payments-btn:hover {
+    border: 2px solid #202832;
+    color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+    .payments-cta {
+        align-items: flex-start;
+        height: auto;
+    }
+
+    .payments-cta-content {
+        padding: 90px 30px;
+    }
+
+    .payments-cta-content::before {
+        opacity: 0.05;
+        background-position: top 0 right -80px;
+    }
+	
+	.payments-cta-bison {
+		right: -249px;
+	}
+}
+
+/* GET STARTED */
+.get-started {
+    position: relative;
+    padding-top: 100px;
+    padding-left: 440px;
+    padding-bottom: 124px;
+    padding: 100px 70px 124px 440px;
+    z-index: 3;
+
+    background: #343E48 url('../images/lines-bgr.png');
+    background-position: left;
+    background-blend-mode: soft-light;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.get-started .cross-bgr-icon {
+    mix-blend-mode: soft-light;
+}
+
+.get-started h1 {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    color: #fff;
+}
+
+.get-started h1 span {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    color: #F0B420;
+}
+
+.get-started-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.get-started-mock {
+    width: 449px;
+    height: 320px;
+    margin-right: 150px;
+    margin-left: 17px;
+
+    background: lightgray;
+}
+
+.get-started-box {
+    padding: 26px 53px;
+    /* background: #1F2832; */
+    margin-top: 10px;
+
+    /* border-left: 7px solid #D79713; */
+    cursor: context-menu;
+}
+
+.get-started-active {
+    position: relative;
+    background: #1F2832;
+    /* border-left: 7px solid #D79713; */
+    transition: .5s;
+}
+
+.get-started-active::before {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #D79713;
+    transition: .5s;
+}
+
+.get-started-active .getting-started-subheading {
+    display: block !important;
+}
+
+.get-started-active p {
+    display: block !important;
+}
+
+.get-started-box h3 {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    line-height: 29px;
+    letter-spacing: 0em;
+
+    color: #F4F6F8;
+}
+
+.get-started-box .getting-started-subheading {
+    display: block;
+    margin-top: 7px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+
+    color: #979797;
+}
+
+.get-started-box p {
+    max-width: 312px;
+    margin-top: 16px;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+
+    color: #F4F6F8;
+}
+
+.get-started-box p a {
+    text-decoration: none;
+    color: #D79713;
+}
+
+@media (min-width: 1376px) and (max-width: 1560px) {
+    .get-started {
+        padding: 100px 70px 124px 225px;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1375px) {
+    .get-started {
+        padding: 100px 70px 124px 100px;
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1279px) {
+    .get-started {
+        padding: 100px 70px 124px 70px;
+    }
+
+    .get-started-mock {
+        margin-right: 70px;
+    }
+}
+
+@media screen and (max-width: 1099px) {
+    .get-started {
+        padding: 100px 30px 124px;
+        align-items: center;
+    }
+
+    .get-started-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .get-started-right {
+        margin-top: 30px;
+    }
+
+    .get-started-mock {
+        max-width: 425px;
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .get-started {
+        padding: 70px 30px;
+        align-items: flex-start;
+    }
+
+    .get-started h1 {
+        margin-bottom: 30px;
+    }
+
+    .get-started-mock {
+        max-width: unset;
+        width: 100%;
+    }
+
+    .get-started-box {
+        padding: 26px 10px 26px 22px;
+    }
+
+    .get-started-active {
+        max-width: 320px;
+    }
+}
+
+/* NEWSLETTER */
+.payments-newsletter {
+    position: relative;
+    padding-top: 86px;
+    padding-bottom: 87px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: #E8ECEF;
+}
+
+.payments-newsletter-left {
+    width: 434px;
+    height: 411px;
+    position: absolute;
+    left: 0;
+
+    background: url('../images/payments/newsletter-left-bgr.svg');
+    background-repeat: no-repeat;
+}
+
+.payments-newsletter-right {
+    width: 434px;
+    height: 411px;
+    position: absolute;
+    right: 0;
+    
+    background: url('../images/payments/newsletter-right-bgr.svg');
+    background-repeat: no-repeat;
+}
+
+.payments-newsletter h1 {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    line-height: 65px;
+    letter-spacing: 0em;
+
+    color: #202932;
+}
+
+.payments-newsletter h4 {
+    margin-top: 10px;
+    margin-bottom: 12px;
+
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0em;
+
+    color: #202932;
+}
+
+.payments-newsletter-copy{
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.2;
+
+    color: #202932;
+}
+
+.payments-newsletter-subcopy {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    color: #358C62;
+}
+
+.payments-newsletter h1 span {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    line-height: 65px;
+    letter-spacing: 0em;
+
+    color: #358C62;
+}
+
+.payments-newsletter form {
+    margin-top: 23px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.payments-email-input {
+    width: 256px;
+    height: 60.95px;
+    border: 0;
+    border-left: 5px solid #202832;
+    padding-left: 25px;
+
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: normal;
+}
+
+.payments-email-input::placeholder {
+    color: #202832;
+}
+
+.payments-email-input:focus {
+    outline: none;
+}
+
+.payments-submit-input {
+    width: 210px;
+    height: 61px;
+
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #fff;
+    border: 0;
+    background: #358C62;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.payments-submit-input:focus {
+    outline: none;
+}
+
+.payments-submit-input:hover {
+    background: #2fbb77;
+    transition: .5s;
+}
+
+@media screen and (max-width: 600px) {
+    .payments-newsletter {
+        padding: 70px 30px;
+        align-items: flex-start;
+    }
+
+    .payments-newsletter-left {
+        height: 100%;
+        background-position: top 0 left -36px;
+    }
+
+    .payments-newsletter-right {
+        display: none;
+    }
+
+    .payments-newsletter form {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .payments-email-input {
+        width: 100%;
+    }
+
+    .payments-submit-input {
+        width: 100%;
+    }
+}
+
+/* FOOTER */
+.payments-footer {
+    padding: 50px 260px 100px;
+    background: #202832;
+}
+
+.payments-footer .footer-section {
+    margin-top: 70px;
+}
+
+@media (min-width: 1440px) and (max-width: 1680px) {
+    .payments-footer {
+        padding: 30px 200px 100px;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1439px) {
+    .payments-footer {
+        padding: 30px 130px 100px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .payments-footer {
+        padding: 30px 90px 100px;
+    }
+}
+
+@media (min-width: 876px) and (max-width: 1023px) {
+    .payments-footer {
+        padding: 30px 50px 70px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 876px) {
+    .payments-footer {
+        padding: 0 30px 30px;
+    }
+
+    .payments-footer .footer-section {
+        margin-top: 70px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

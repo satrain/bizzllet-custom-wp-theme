@@ -1,0 +1,415 @@
+.payroll-hero {
+    padding-top: 180px;
+    padding-bottom: 70px;
+    background: #202832;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payroll-hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.payroll-hero-content h1,
+.payroll-hero-content h1 span {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    font-style: normal;
+    line-height: 65px;
+    letter-spacing: 0em;
+    color: #fff;
+}
+
+.payroll-hero-content h1 span {
+    color: #F0B420;
+}
+
+.payroll-hero-content h3 {
+    margin-top: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 29px;
+    letter-spacing: 0em;
+    color: #f4f6f8;
+}
+
+.payroll-hero-mock {
+    width: 600px;
+    height: 550px;
+    background: url('../images/payroll/payroll-hero-mock.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+    .payroll-hero {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .payroll-hero-mock {
+        width: 100%;
+        height: 450px;
+        background-size: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .payroll-hero {
+        padding: 120px 30px 70px;
+    }
+
+    .payroll-hero-content h1,
+    .payroll-hero-content h1 span {
+        line-height: 1.15 !important;
+    }
+
+    .payroll-hero-mock {
+        width: 100%;
+        height: 300px;
+        background-size: 100%;
+        margin-top: 15px;
+    }
+}
+
+/* Why Bizzllet? */
+.payroll-why-bizzllet {
+    padding-top: 90px;
+    padding-bottom: 75px;
+    background: #f0b420 url('../images/lines-bgr.png');
+    background-blend-mode: multiply;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payroll-why-bizzllet h2,
+.payroll-why-bizzllet h2 span {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    font-style: normal;
+    line-height: 43px;
+    letter-spacing: 0em;
+    color: #202832;
+}
+
+.payroll-why-bizzllet h2 span {
+    color: #F4F6F8;
+}
+
+.payroll-why-bizzllet-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.payroll-why-bizzllet-items {
+    margin-top: 58px;
+    display: flex;
+    justify-content: center;
+}
+
+.payroll-why-bizzllet-items > div {
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 24px;
+    cursor: default;
+}
+
+.payroll-fast,
+.payroll-seamless,
+.payroll-reliable {
+    opacity: .7;
+    transition: .5s;
+}
+
+.payroll-fast-icon {
+    width: 86px;
+    height: 86px;
+
+    background: url('../images/payroll/why-bizzllet-fast.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .5s;
+}
+
+.payroll-seamless-icon {
+    width: 93px;
+    height: 86px;
+
+    background: url('../images/payroll/why-bizzllet-seamless.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: .5s;
+}
+
+.payroll-reliable-icon {
+    width: 86px;
+    height: 86px;
+
+    background: url('../images/payroll/why-bizzllet-reliable.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .5s;
+}
+
+.payroll-why-bizzllet-items > div > h3 {
+    margin-top: 14px;
+    margin-bottom: 8px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38px;
+    letter-spacing: 0em;
+    color: #202932;
+    transition: .5s;
+}
+
+.payroll-why-bizzllet-items > div > p {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    color: #202932;
+    transition: .5s;
+    text-align: center;
+}
+
+.payroll-fast p {
+    max-width: 277px;
+}
+
+.payroll-seamless p {
+    max-width: 348px;
+}
+
+.payroll-reliable p {
+    max-width: 277px;
+}
+
+.payroll-item-active {
+    opacity: 1;
+    position: relative;
+}
+
+.payroll-item-active .payroll-icon {
+    transform: scale(1.2);
+    transition: .5s;
+}
+
+.payroll-item-active::after {
+    content: "";
+    position: absolute;
+    width: 96px;
+    height: 7px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #202932;
+    animation: .5s fadeIn;
+}
+
+@media screen and (max-width: 619px) {
+    .payroll-why-bizzllet {
+        padding: 70px 30px 0;
+        justify-content: flex-start;
+    }
+
+    .payroll-why-bizzllet-content {
+        align-items: flex-start;
+    }
+
+    .payroll-why-bizzllet-items {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .payroll-why-bizzllet-items > div {
+        align-items: flex-start;
+        margin-bottom: 70px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .payroll-why-bizzllet-items > div > p {
+        text-align: left;
+    }
+
+    .payroll-item-active::after {
+        left: 0;
+        transform: unset;
+    }
+}
+
+/* Pay and reward */
+.payroll-pay-reward {
+    padding-top: 114px;
+    padding-bottom: 150px;
+    background: #F4F6F8 url('../images/payroll/payroll-pay-reward-bgr.svg');
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payroll-pay-reward-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.payroll-pay-reward h1,
+.payroll-pay-reward h1 span {
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    font-style: normal;
+    line-height: 65px;
+    letter-spacing: 0em;
+    color: #1F2832;
+    text-align: center;
+}
+
+.payroll-pay-reward h1 {
+    max-width: 529px;
+}
+
+.payroll-pay-reward h1 span {
+    color: #F0B420;
+}
+
+.payroll-btn {
+    width: 219px;
+    margin-top: 48px;
+    background: #1f2832;
+}
+
+.payroll-btn:hover {
+    border: 2px solid #1f2832;
+    transition: .5s;
+}
+
+@media screen and (max-width: 425px) {
+    .payroll-pay-reward {
+        padding: 70px 30px;
+    }
+
+    .payroll-pay-reward-content {
+        align-items: flex-start;
+    }
+
+    .payroll-pay-reward-content h1 {
+        text-align: left;
+    }
+
+    .payroll-pay-reward-content h1,
+    .payroll-pay-reward-content h1 span {
+        line-height: 1.2 !important;
+    }
+
+    .payroll-pay-reward-content .payroll-btn {
+        width: 100%;
+    }
+}
+
+/* Payroll get started */
+.payroll-get-started h1 span {
+    color: #358C62 !important;
+}
+
+.payroll-get-started a {
+    color: #358C62 !important;
+}
+
+/* Payroll newsletter */
+.payroll-newsletter-content h2 {
+    margin-bottom: 0;
+    font-family: 'Blacker-Pro-Bold', sans-serif;
+    font-style: normal;
+    line-height: 120%;
+    color: #F4F6F8;
+}
+
+.payroll-newsletter-subscribe {
+    margin-top: 10px;
+    margin-bottom: 12px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 120%;
+
+    color: #FFFFFF;
+}
+
+.payroll-newsletter-no-spam {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: #fff;
+}
+
+.payroll-newsletter-content span {
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    color: #1F2832;;
+}
+
+.payroll-newsletter form {
+    margin-top: 20px;
+    position: relative;
+    z-index: 5000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payroll-email-input {
+    height: 61px;
+    background: rgba(255, 255, 255, .3);
+}
+
+.payroll-submit-input {
+    background: #1F2832;
+}
+
+.payroll-submit-input:hover {
+    background: #28323b;
+}
+
+@media screen and (max-width: 600px) {
+    .payroll-newsletter-content {
+        padding: 0px 30px;
+        overflow: hidden;
+    }
+
+    .payroll-newsletter-content form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .payroll-newsletter-content{
+        padding: 70px 30px;
+        height: auto;
+    }
+
+    .payroll-newsletter-content form {
+        flex-direction: column;
+    }
+
+    .payroll-newsletter-bison {
+        bottom: 3px;
+    }
+}
